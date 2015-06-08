@@ -1,5 +1,6 @@
 <?php
 namespace Excercises\Poly;
+
 class Poly
 {
     /**
