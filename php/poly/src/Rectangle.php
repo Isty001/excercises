@@ -2,13 +2,10 @@
 
 namespace Excercises\Poly;
 
-use Excercises\Poly\Poly;
 
-class Rectangle extends Poly
+class Rectangle implements Shape
 {
-    public function __construct(WritableStream $stream)
-    {
-        parent::__construct($stream);
-        $this->returnArea("a*b");
+    public function returnArea(){
+        return "a*b";
     }
 }

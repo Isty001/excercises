@@ -1,21 +1,20 @@
 <?php
-
 namespace Excercises\Poly;
-
 class Poly
 {
     /**
      * @var WritableStream
      */
-    protected $stream;
-    protected $area;
-
+    private $stream;
     public function __construct(WritableStream $stream)
     {
         $this->stream = $stream;
     }
 
-    public function returnArea($area){
-        $this->stream->write($area);
+    /**
+     * @param Shape $shape
+     */
+    public function printAreaFormula(Shape $shape) {
+        $this->stream->write($shape->returnArea());
     }
 }

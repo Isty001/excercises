@@ -2,13 +2,10 @@
 
 namespace Excercises\Poly;
 
-use Excercises\Poly\Poly;
 
-class Triangle extends Poly
+class Triangle implements Shape
 {
-    public function __construct(WritableStream $stream)
-    {
-        parent::__construct($stream);
-        $this->returnArea("(b*h)/2");
+    public function returnArea(){
+        return "(b*h)/2";
     }
 }

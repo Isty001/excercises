@@ -2,13 +2,10 @@
 
 namespace Excercises\Poly;
 
-use Excercises\Poly\Poly;
 
-class Square extends Poly
+class Square implements Shape
 {
-    public function __construct(WritableStream $stream)
-    {
-        parent::__construct($stream);
-        $this->returnArea("a^2");
+    public function returnArea(){
+        return "a^2";
     }
 }
